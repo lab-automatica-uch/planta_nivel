@@ -1,12 +1,12 @@
 Model {
-  Name			  "Plantilla_Simulink_Estanque"
+  Name			  "PlantaNivel"
   Version		  8.1
   MdlSubVersion		  0
   GraphicalInterface {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.122"
+    ComputedModelVersion    "1.125"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [183.0, 63.0, 1242.0, 854.0]
+      Location		      [72.0, 70.0, 1242.0, 854.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -47,28 +47,16 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[0]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		2
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [1192.0, 707.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-105.98683229494657, -95.709047908147568]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "2"
-	  Extents		  [1192.0, 707.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-3.25, 0.0]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1192.0, 707.0]
+	ZoomFactor		[1.0]
+	Offset			[-105.98683229494657, -95.709047908147568]
       }
     }
   }
@@ -78,9 +66,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Admin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Aug 05 14:13:24 2016"
-  RTWModifiedTimeStamp	  392307189
-  ModelVersionFormat	  "1.%<AutoIncrement:122>"
+  LastModifiedDate	  "Tue Aug 09 13:31:59 2016"
+  RTWModifiedTimeStamp	  392650142
+  ModelVersionFormat	  "1.%<AutoIncrement:125>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -115,13 +103,13 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    6
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
-    model_		    "Plantilla_Simulink_Estanque"
+    model_		    "PlantaNivel"
     Array {
       Type		      "Cell"
       Dimension		      1
-      Cell		      "Plantilla_Simulink_Estanque"
+      Cell		      "PlantaNivel"
       PropName		      "logAsSpecifiedByModels_"
     }
     Array {
@@ -173,16 +161,16 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      8
+      $ObjectID		      7
       Version		      "1.13.0"
       Array {
 	Type			"Handle"
 	Dimension		8
 	Simulink.SolverCC {
-	  $ObjectID		  9
+	  $ObjectID		  8
 	  Version		  "1.13.0"
 	  StartTime		  "0.0"
-	  StopTime		  "5000"
+	  StopTime		  "60"
 	  AbsTol		  "auto"
 	  FixedStep		  "0.05"
 	  InitialStep		  "auto"
@@ -214,7 +202,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
+	  $ObjectID		  9
 	  Version		  "1.13.0"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -246,7 +234,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
+	  $ObjectID		  10
 	  Version		  "1.13.0"
 	  Array {
 	    Type		    "Cell"
@@ -298,7 +286,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
+	  $ObjectID		  11
 	  Version		  "1.13.0"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -388,7 +376,7 @@ Model {
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
+	  $ObjectID		  12
 	  Version		  "1.13.0"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -429,7 +417,7 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
+	  $ObjectID		  13
 	  Version		  "1.13.0"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -444,7 +432,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
+	  $ObjectID		  14
 	  Version		  "1.13.0"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -459,7 +447,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
+	  $ObjectID		  15
 	  Version		  "1.13.0"
 	  Array {
 	    Type		    "Cell"
@@ -516,7 +504,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
+	      $ObjectID		      16
 	      Version		      "1.13.0"
 	      Array {
 		Type			"Cell"
@@ -571,7 +559,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
+	      $ObjectID		      17
 	      Version		      "1.13.0"
 	      Array {
 		Type			"Cell"
@@ -652,17 +640,17 @@ Model {
       }
       Name		      "Configuration"
       CurrentDlgPage	      "Solver"
-      ConfigPrmDlgPosition     [ 430, 225, 1490, 855 ] 
+      ConfigPrmDlgPosition     [ 414, 165, 1506, 871 ] 
     }
     PropName		    "ConfigurationSets"
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
+    $ObjectID		    7
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    19
+    $ObjectID		    18
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -760,6 +748,9 @@ Model {
       RndMeth		      "Floor"
       SaturateOnIntegerOverflow	on
       SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Ground
     }
     Block {
       BlockType		      Inport
@@ -907,8 +898,8 @@ Model {
     }
   }
   System {
-    Name		    "Plantilla_Simulink_Estanque"
-    Location		    [183, 63, 1425, 917]
+    Name		    "PlantaNivel"
+    Location		    [72, 70, 1314, 924]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -922,14 +913,14 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "100"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "116"
+    SIDHighWatermark	    "127"
     Block {
       BlockType		      Constant
       Name		      "Constant"
       SID		      "1"
       Position		      [220, 255, 250, 285]
       ZOrder		      -1
-      Value		      "100"
+      Value		      "90"
     }
     Block {
       BlockType		      SubSystem
@@ -948,24 +939,34 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		20
+	$ObjectID		19
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('img/estanque.png'))\n\nport_label('input', 1, 'Variador')\nport_label('output', 1, 'Nivel Es"
 	"tanque Conico')\nport_label('output', 2, 'Nivel Estanque Cuadrado')\n\n\n\n"
-	Object {
-	  $PropName		  "Parameters"
-	  $ObjectID		  21
-	  $ClassName		  "Simulink.MaskParameter"
-	  Type			  "checkbox"
-	  Name			  "D"
-	  Prompt		  "Descarga"
-	  Value			  "off"
+	Array {
+	  Type			  "Simulink.MaskParameter"
+	  Dimension		  2
+	  Object {
+	    $ObjectID		    20
+	    Type		    "edit"
+	    Name		    "Ts"
+	    Prompt		    "Tasa de muestreo"
+	    Value		    "0.05"
+	  }
+	  Object {
+	    $ObjectID		    21
+	    Type		    "checkbox"
+	    Name		    "D"
+	    Prompt		    "Descarga"
+	    Value		    "on"
+	  }
+	  PropName		  "Parameters"
 	}
       }
       System {
 	Name			"Estanques"
-	Location		[183, 63, 1425, 917]
-	Open			on
+	Location		[72, 70, 1314, 924]
+	Open			off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
@@ -976,12 +977,12 @@ Model {
 	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"100"
+	ZoomFactor		"125"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Variador\n"
 	  SID			  "3"
-	  Position		  [15, 63, 45, 77]
+	  Position		  [20, 28, 50, 42]
 	  ZOrder		  -1
 	  IconDisplay		  "Port number"
 	}
@@ -990,7 +991,7 @@ Model {
 	  Name			  "Ajuste de sensor"
 	  SID			  "4"
 	  Ports			  [1, 1]
-	  Position		  [655, 73, 765, 137]
+	  Position		  [700, 73, 810, 137]
 	  ZOrder		  -2
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
@@ -1027,7 +1028,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Ajuste de sensor"
-	    Location		    [438, 125, 942, 573]
+	    Location		    [183, 63, 1425, 917]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -1056,7 +1057,7 @@ Model {
 	      ZOrder		      -2
 	      NamePlacement	      "alternate"
 	      Value		      "SE"
-	      SampleTime	      "0.05"
+	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      SubSystem
@@ -1122,7 +1123,7 @@ Model {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
 		  SID			  "7::7"
-		  Tag			  "Stateflow S-Function Plantilla_Simulink_Estanque 2"
+		  Tag			  "Stateflow S-Function PlantaNivel 2"
 		  Ports			  [2, 2]
 		  Position		  [180, 100, 230, 160]
 		  ZOrder		  1
@@ -1193,6 +1194,7 @@ Model {
 	      Position		      [65, 70, 125, 100]
 	      ZOrder		      -4
 	      Expr		      "(u-4.5511)/0.0909"
+	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -1201,7 +1203,7 @@ Model {
 	      Position		      [145, 110, 195, 140]
 	      ZOrder		      -5
 	      Value		      "SL"
-	      SampleTime	      "0.05"
+	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      Sum
@@ -1214,7 +1216,7 @@ Model {
 	      InputSameDT	      off
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
-	      SampleTime	      "0.05"
+	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      Outport
@@ -1265,11 +1267,74 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Ground
+	  Name			  "Ground"
+	  SID			  "119"
+	  Position		  [295, 105, 315, 125]
+	  ZOrder		  2
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground1"
+	  SID			  "120"
+	  Position		  [295, 130, 315, 150]
+	  ZOrder		  3
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground2"
+	  SID			  "121"
+	  Position		  [295, 155, 315, 175]
+	  ZOrder		  4
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground3"
+	  SID			  "122"
+	  Position		  [295, 180, 315, 200]
+	  ZOrder		  5
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground4"
+	  SID			  "123"
+	  Position		  [295, 205, 315, 225]
+	  ZOrder		  6
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground5"
+	  SID			  "124"
+	  Position		  [295, 230, 315, 250]
+	  ZOrder		  7
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground6"
+	  SID			  "125"
+	  Position		  [295, 255, 315, 275]
+	  ZOrder		  8
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground7"
+	  SID			  "126"
+	  Position		  [295, 280, 315, 300]
+	  ZOrder		  9
+	}
+	Block {
+	  BlockType		  Ground
+	  Name			  "Ground8"
+	  SID			  "127"
+	  Position		  [295, 305, 315, 325]
+	  ZOrder		  10
+	}
+	Block {
 	  BlockType		  SubSystem
 	  Name			  "Parada de emergencia"
 	  SID			  "12"
 	  Ports			  [1]
-	  Position		  [815, 126, 865, 164]
+	  Position		  [860, 126, 910, 164]
 	  ZOrder		  -3
 	  BackgroundColor	  "red"
 	  MinAlgLoopOccurrences	  off
@@ -1382,7 +1447,7 @@ Model {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
 		  SID			  "14::7"
-		  Tag			  "Stateflow S-Function Plantilla_Simulink_Estanque 3"
+		  Tag			  "Stateflow S-Function PlantaNivel 3"
 		  Ports			  [2, 2]
 		  Position		  [180, 100, 230, 160]
 		  ZOrder		  1
@@ -1488,7 +1553,7 @@ Model {
 	  Name			  "Planta Nivel"
 	  SID			  "17"
 	  Ports			  [10, 9]
-	  Position		  [305, 79, 550, 326]
+	  Position		  [350, 79, 595, 326]
 	  ZOrder		  -4
 	  BackgroundColor	  "yellow"
 	  MinAlgLoopOccurrences	  off
@@ -1510,7 +1575,7 @@ Model {
 	      Type		      "edit"
 	      Name		      "Ts"
 	      Prompt		      "Tiempo Muestreo"
-	      Value		      "0.05"
+	      Value		      "Ts"
 	    }
 	  }
 	  System {
@@ -1733,7 +1798,7 @@ Model {
 	      MaskHideContents	      off
 	      System {
 		Name			"Calibrador1"
-		Location		[541, 332, 842, 653]
+		Location		[183, 63, 1425, 917]
 		Open			off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
@@ -2846,7 +2911,7 @@ Model {
 	  Name			  "Sistema de descarga"
 	  SID			  "96"
 	  Ports			  [2, 1]
-	  Position		  [110, 54, 285, 121]
+	  Position		  [140, 19, 315, 86]
 	  ZOrder		  -5
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
@@ -2881,7 +2946,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Sistema de descarga"
-	    Location		    [236, 263, 749, 800]
+	    Location		    [183, 63, 1425, 917]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -2937,7 +3002,7 @@ Model {
 	      InputPortMap	      "u0"
 	      UpperLimit	      "100"
 	      LowerLimit	      "0"
-	      SampleTime	      "0.05"
+	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      SubSystem
@@ -3012,7 +3077,7 @@ Model {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
 		  SID			  "102::8"
-		  Tag			  "Stateflow S-Function Plantilla_Simulink_Estanque 1"
+		  Tag			  "Stateflow S-Function PlantaNivel 1"
 		  Ports			  [3, 2]
 		  Position		  [180, 100, 230, 180]
 		  ZOrder		  1
@@ -3092,6 +3157,7 @@ Model {
 	      Threshold		      "1"
 	      InputSameDT	      off
 	      SaturateOnIntegerOverflow	off
+	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      Constant
@@ -3165,7 +3231,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminaor2"
 	  SID			  "106"
-	  Position		  [565, 220, 585, 240]
+	  Position		  [610, 220, 630, 240]
 	  ZOrder		  -6
 	  ShowName		  off
 	}
@@ -3173,7 +3239,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator"
 	  SID			  "107"
-	  Position		  [565, 170, 585, 190]
+	  Position		  [610, 170, 630, 190]
 	  ZOrder		  -7
 	  ShowName		  off
 	}
@@ -3181,7 +3247,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Terminator1"
 	  SID			  "108"
-	  Position		  [565, 295, 585, 315]
+	  Position		  [610, 295, 630, 315]
 	  ZOrder		  -8
 	  ShowName		  off
 	}
@@ -3189,7 +3255,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "Trminator1"
 	  SID			  "109"
-	  Position		  [565, 195, 585, 215]
+	  Position		  [610, 195, 630, 215]
 	  ZOrder		  -9
 	  ShowName		  off
 	}
@@ -3197,15 +3263,16 @@ Model {
 	  BlockType		  Fcn
 	  Name			  "cm"
 	  SID			  "110"
-	  Position		  [725, 195, 785, 225]
+	  Position		  [770, 195, 830, 225]
 	  ZOrder		  -10
 	  Expr			  "3.42348*(u-4)"
+	  SampleTime		  "Ts"
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "ermnator4"
 	  SID			  "111"
-	  Position		  [565, 270, 585, 290]
+	  Position		  [610, 270, 630, 290]
 	  ZOrder		  -11
 	  ShowName		  off
 	}
@@ -3213,7 +3280,7 @@ Model {
 	  BlockType		  Terminator
 	  Name			  "rminator3"
 	  SID			  "112"
-	  Position		  [565, 245, 585, 265]
+	  Position		  [610, 245, 630, 265]
 	  ZOrder		  -12
 	  ShowName		  off
 	}
@@ -3221,7 +3288,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Nivel Estanque Cónico"
 	  SID			  "113"
-	  Position		  [920, 98, 950, 112]
+	  Position		  [965, 98, 995, 112]
 	  ZOrder		  -13
 	  IconDisplay		  "Port number"
 	}
@@ -3229,7 +3296,7 @@ Model {
 	  BlockType		  Outport
 	  Name			  "Nivel Estanque Cuadrado\n"
 	  SID			  "114"
-	  Position		  [920, 203, 950, 217]
+	  Position		  [965, 203, 995, 217]
 	  ZOrder		  -14
 	  Port			  "2"
 	  IconDisplay		  "Port number"
@@ -3276,13 +3343,14 @@ Model {
 	Line {
 	  SrcBlock		  "Planta Nivel"
 	  SrcPort		  2
-	  Points		  [55, 0; 0, 260; -525, 0; 0, -285]
+	  Points		  [55, 0; 0, 260; -591, 0; 0, -320]
 	  DstBlock		  "Sistema de descarga"
 	  DstPort		  2
 	}
 	Line {
 	  SrcBlock		  "Sistema de descarga"
 	  SrcPort		  1
+	  Points		  [12, 0; 0, 35]
 	  DstBlock		  "Planta Nivel"
 	  DstPort		  1
 	}
@@ -3322,6 +3390,60 @@ Model {
 	  DstBlock		  "Terminator1"
 	  DstPort		  1
 	}
+	Line {
+	  SrcBlock		  "Ground"
+	  SrcPort		  1
+	  DstBlock		  "Planta Nivel"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Ground1"
+	  SrcPort		  1
+	  DstBlock		  "Planta Nivel"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Ground2"
+	  SrcPort		  1
+	  DstBlock		  "Planta Nivel"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "Ground3"
+	  SrcPort		  1
+	  DstBlock		  "Planta Nivel"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "Ground4"
+	  SrcPort		  1
+	  DstBlock		  "Planta Nivel"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "Ground5"
+	  SrcPort		  1
+	  DstBlock		  "Planta Nivel"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "Ground6"
+	  SrcPort		  1
+	  DstBlock		  "Planta Nivel"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "Ground7"
+	  SrcPort		  1
+	  DstBlock		  "Planta Nivel"
+	  DstPort		  9
+	}
+	Line {
+	  SrcBlock		  "Ground8"
+	  SrcPort		  1
+	  DstBlock		  "Planta Nivel"
+	  DstPort		  10
+	}
       }
     }
     Block {
@@ -3332,7 +3454,7 @@ Model {
       Position		      [665, 304, 695, 336]
       ZOrder		      1
       Floating		      off
-      Location		      [188, 390, 512, 629]
+      Location		      [956, 432, 1497, 787]
       Open		      off
       NumInputPorts	      "1"
       List {
@@ -3350,9 +3472,42 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      off
-      TimeRange		      "5000"
+      TimeRange		      "60              "
+      YMin		      "14.75"
+      YMax		      "18"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      SID		      "117"
+      Ports		      [1]
+      Position		      [665, 204, 695, 236]
+      ZOrder		      2
+      Floating		      off
+      Location		      [630, 402, 1688, 876]
+      Open		      on
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      List {
+	ListType		ScopeGraphics
+	FigureColor		"[0.5 0.5 0.5]"
+	AxesColor		"[0 0 0]"
+	AxesTickColor		"[1 1 1]"
+	LineColors		"[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]"
+	LineStyles		"-|-|-|-|-|-"
+	LineWidths		"[0.5 0.5 0.5 0.5 0.5 0.5]"
+	MarkerStyles		"none|none|none|none|none|none"
+      }
+      ShowLegends	      off
+      TimeRange		      "60              "
       YMin		      "0"
-      YMax		      "8.5"
+      YMax		      "17.5"
+      SaveName		      "ScopeData1"
       DataFormat	      "StructureWithTime"
       SampleTime	      "0"
     }
@@ -3407,6 +3562,12 @@ Model {
       DstBlock		      "Scope"
       DstPort		      1
     }
+    Line {
+      SrcBlock		      "Estanques"
+      SrcPort		      1
+      DstBlock		      "Scope1"
+      DstPort		      1
+    }
   }
 }
 # Finite State Machines
@@ -3418,7 +3579,7 @@ Model {
 Stateflow {
   machine {
     id			    1
-    name		    "Plantilla_Simulink_Estanque"
+    name		    "PlantaNivel"
     created		    "04-Apr-2011 13:57:18"
     isLibrary		    0
     firstTarget		    27
@@ -3434,7 +3595,10 @@ Stateflow {
     firstTransition	    9
     firstJunction	    8
     viewObj		    2
+    visible		    1
     machine		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    7
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
@@ -3607,7 +3771,10 @@ Stateflow {
     firstTransition	    17
     firstJunction	    16
     viewObj		    11
+    visible		    1
     machine		    1
+    subviewS {
+    }
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
