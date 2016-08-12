@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.125"
+    ComputedModelVersion    "1.235"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -30,7 +30,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [72.0, 70.0, 1242.0, 854.0]
+      Location		      [0.0, 0.0, 1558.0, 1040.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -47,16 +47,37 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[0]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
-	Extents			[1192.0, 707.0]
-	ZoomFactor		[1.0]
-	Offset			[-105.98683229494657, -95.709047908147568]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		3
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1508.0, 893.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [590.63242116914944, 38.019780494734093]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "348"
+	  Extents		  [910.0, 893.0]
+	  ZoomFactor		  [1.5]
+	  Offset		  [-124.83333333333337, -130.66666666666669]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "333"
+	  Extents		  [910.0, 893.0]
+	  ZoomFactor		  [2.0]
+	  Offset		  [248.1215893398961, 81.9022092384956]
+	}
+	PropName		"EditorsInfo"
       }
     }
   }
@@ -66,9 +87,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Admin"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Aug 09 13:31:59 2016"
-  RTWModifiedTimeStamp	  392650142
-  ModelVersionFormat	  "1.%<AutoIncrement:125>"
+  LastModifiedDate	  "Fri Aug 12 17:08:59 2016"
+  RTWModifiedTimeStamp	  392922507
+  ModelVersionFormat	  "1.%<AutoIncrement:235>"
   ConfigurationManager	  "None"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -103,7 +124,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    6
+    $ObjectID		    8
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "PlantaNivel"
     Array {
@@ -161,13 +182,13 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      7
+      $ObjectID		      9
       Version		      "1.13.0"
       Array {
 	Type			"Handle"
 	Dimension		8
 	Simulink.SolverCC {
-	  $ObjectID		  8
+	  $ObjectID		  10
 	  Version		  "1.13.0"
 	  StartTime		  "0.0"
 	  StopTime		  "60"
@@ -188,8 +209,8 @@ Model {
 	  SolverMode		  "Auto"
 	  EnableConcurrentExecution off
 	  ConcurrentTasks	  off
-	  Solver		  "ode5"
-	  SolverName		  "ode5"
+	  Solver		  "ode3"
+	  SolverName		  "ode3"
 	  SolverJacobianMethodControl "auto"
 	  ShapePreserveControl	  "DisableAll"
 	  ZeroCrossControl	  "UseLocalSettings"
@@ -202,7 +223,7 @@ Model {
 	  InsertRTBMode		  "Whenever possible"
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  9
+	  $ObjectID		  11
 	  Version		  "1.13.0"
 	  Decimation		  "1"
 	  ExternalInput		  "[t, u]"
@@ -234,7 +255,7 @@ Model {
 	  Refine		  "1"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  10
+	  $ObjectID		  12
 	  Version		  "1.13.0"
 	  Array {
 	    Type		    "Cell"
@@ -286,7 +307,7 @@ Model {
 	  ParallelExecutionInRapidAccelerator on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  11
+	  $ObjectID		  13
 	  Version		  "1.13.0"
 	  RTPrefix		  "error"
 	  ConsistencyChecking	  "none"
@@ -376,7 +397,7 @@ Model {
 	  SFTransitionActionBeforeConditionDiag	"warning"
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  12
+	  $ObjectID		  14
 	  Version		  "1.13.0"
 	  ProdBitPerChar	  8
 	  ProdBitPerShort	  16
@@ -417,7 +438,7 @@ Model {
 	  ProdEqTarget		  on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  13
+	  $ObjectID		  15
 	  Version		  "1.13.0"
 	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
 	  CheckModelReferenceTargetMessage "error"
@@ -432,7 +453,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  14
+	  $ObjectID		  16
 	  Version		  "1.13.0"
 	  SFSimEnableDebug	  on
 	  SFSimOverflowDetection  on
@@ -447,7 +468,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  15
+	  $ObjectID		  17
 	  Version		  "1.13.0"
 	  Array {
 	    Type		    "Cell"
@@ -504,7 +525,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      16
+	      $ObjectID		      18
 	      Version		      "1.13.0"
 	      Array {
 		Type			"Cell"
@@ -559,7 +580,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      17
+	      $ObjectID		      19
 	      Version		      "1.13.0"
 	      Array {
 		Type			"Cell"
@@ -646,11 +667,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    7
+    $ObjectID		    9
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    18
+    $ObjectID		    20
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -836,6 +857,15 @@ Model {
       SampleTime	      "-1"
     }
     Block {
+      BlockType		      Step
+      Time		      "1"
+      Before		      "0"
+      After		      "1"
+      SampleTime	      "-1"
+      VectorParams1D	      on
+      ZeroCross		      on
+    }
+    Block {
       BlockType		      Stop
     }
     Block {
@@ -899,7 +929,7 @@ Model {
   }
   System {
     Name		    "PlantaNivel"
-    Location		    [72, 70, 1314, 924]
+    Location		    [0, 0, 1558, 1040]
     Open		    on
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -911,25 +941,33 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "150"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "127"
+    SIDHighWatermark	    "808"
     Block {
       BlockType		      Constant
-      Name		      "Constant"
-      SID		      "1"
-      Position		      [220, 255, 250, 285]
-      ZOrder		      -1
-      Value		      "90"
+      Name		      "Constant2"
+      SID		      "802"
+      Position		      [785, 380, 815, 410]
+      ZOrder		      647
+      Value		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      SID		      "784"
+      Position		      [785, 480, 815, 510]
+      ZOrder		      641
+      Value		      "0"
     }
     Block {
       BlockType		      SubSystem
       Name		      "Estanques"
-      SID		      "2"
-      Ports		      [1, 2]
-      Position		      [325, 171, 595, 369]
-      ZOrder		      -2
-      BackgroundColor	      "yellow"
+      SID		      "333"
+      Ports		      [3, 3]
+      Position		      [895, 243, 1285, 547]
+      ZOrder		      22
+      BackgroundColor	      "[0.909804, 0.819608, 0.321569]"
       MinAlgLoopOccurrences   off
       PropExecContextOutsideSubsystem off
       RTWSystemCode	      "Auto"
@@ -939,59 +977,91 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		19
+	$ObjectID		21
 	$ClassName		"Simulink.Mask"
-	Display			"image(imread('img/estanque.png'))\n\nport_label('input', 1, 'Variador')\nport_label('output', 1, 'Nivel Es"
-	"tanque Conico')\nport_label('output', 2, 'Nivel Estanque Cuadrado')\n\n\n\n"
+	Display			"image(imread('img/estanque.png'))\n\nport_label('input', 1, 'Variador')\nport_label('input', 2, 'Calefacto"
+	"r')\nport_label('input', 3, 'Agitador')\nport_label('output', 1, 'Nivel Estanque Conico')\nport_label('output', 2, 'T"
+	"emperatura Estanque Conico')\nport_label('output', 3, 'Temperatura Estanque Recirculacion')\n\n\n"
 	Array {
 	  Type			  "Simulink.MaskParameter"
 	  Dimension		  2
 	  Object {
-	    $ObjectID		    20
+	    $ObjectID		    22
 	    Type		    "edit"
 	    Name		    "Ts"
-	    Prompt		    "Tasa de muestreo"
-	    Value		    "0.05"
+	    Prompt		    "Tiempo muestreo (Ts)"
+	    Value		    "0.1"
 	  }
 	  Object {
-	    $ObjectID		    21
+	    $ObjectID		    23
 	    Type		    "checkbox"
 	    Name		    "D"
-	    Prompt		    "Descarga"
-	    Value		    "on"
+	    Prompt		    "Modo descarga"
+	    Value		    "off"
 	  }
 	  PropName		  "Parameters"
 	}
       }
+      Port {
+	PortNumber		1
+	Name			"h"
+	PropagatedSignals	"y"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
+      Port {
+	PortNumber		2
+	Name			"V"
+	RTWStorageClass		"Auto"
+	DataLoggingNameMode	"SignalName"
+      }
       System {
 	Name			"Estanques"
-	Location		[72, 70, 1314, 924]
-	Open			off
+	Location		[0, 0, 960, 1040]
+	Open			on
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
 	PaperPositionMode	"auto"
-	PaperType		"A4"
-	PaperUnits		"centimeters"
-	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"125"
+	ZoomFactor		"200"
 	Block {
 	  BlockType		  Inport
 	  Name			  "Variador\n"
-	  SID			  "3"
+	  SID			  "334"
 	  Position		  [20, 28, 50, 42]
 	  ZOrder		  -1
 	  IconDisplay		  "Port number"
 	}
 	Block {
+	  BlockType		  Inport
+	  Name			  "Calefactor"
+	  SID			  "506"
+	  Position		  [20, 178, 50, 192]
+	  ZOrder		  2
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Agitador"
+	  SID			  "507"
+	  Position		  [20, 303, 50, 317]
+	  ZOrder		  3
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
 	  BlockType		  SubSystem
 	  Name			  "Ajuste de sensor"
-	  SID			  "4"
+	  SID			  "335"
 	  Ports			  [1, 1]
-	  Position		  [700, 73, 810, 137]
+	  Position		  [775, 93, 885, 157]
 	  ZOrder		  -2
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
@@ -1002,7 +1072,7 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    22
+	    $ObjectID		    24
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Ajuste de sensor"
 	    Description		    "Calibra el sensor y transforma la señal de corriente en altura en cms."
@@ -1010,14 +1080,14 @@ Model {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		23
+		$ObjectID		25
 		Type			"edit"
 		Name			"SE"
 		Prompt			"Correccion error de sensor"
 		Value			"6.53"
 	      }
 	      Object {
-		$ObjectID		24
+		$ObjectID		26
 		Type			"edit"
 		Name			"SL"
 		Prompt			"Limite inferior sensor"
@@ -1028,7 +1098,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Ajuste de sensor"
-	    Location		    [183, 63, 1425, 917]
+	    Location		    [0, 0, 960, 1040]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -1040,11 +1110,11 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "150"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Voltage"
-	      SID		      "5"
+	      SID		      "336"
 	      Position		      [15, 78, 45, 92]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -1052,17 +1122,16 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Corrección de Error \nSensor"
-	      SID		      "6"
+	      SID		      "337"
 	      Position		      [70, 30, 120, 60]
 	      ZOrder		      -2
 	      NamePlacement	      "alternate"
 	      Value		      "SE"
-	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Embedded\nMATLAB Function"
-	      SID		      "7"
+	      SID		      "338"
 	      Ports		      [2, 1]
 	      Position		      [245, 69, 315, 116]
 	      ZOrder		      -3
@@ -1096,7 +1165,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "u"
-		  SID			  "7::1"
+		  SID			  "338::1"
 		  Position		  [20, 101, 40, 119]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -1104,7 +1173,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "u1"
-		  SID			  "7::2"
+		  SID			  "338::2"
 		  Position		  [20, 136, 40, 154]
 		  ZOrder		  -2
 		  Port			  "2"
@@ -1113,7 +1182,7 @@ Model {
 		Block {
 		  BlockType		  Demux
 		  Name			  " Demux "
-		  SID			  "7::8"
+		  SID			  "338::8"
 		  Ports			  [1, 1]
 		  Position		  [270, 230, 320, 270]
 		  ZOrder		  2
@@ -1122,8 +1191,8 @@ Model {
 		Block {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
-		  SID			  "7::7"
-		  Tag			  "Stateflow S-Function PlantaNivel 2"
+		  SID			  "338::7"
+		  Tag			  "Stateflow S-Function PlantaNivel 1"
 		  Ports			  [2, 2]
 		  Position		  [180, 100, 230, 160]
 		  ZOrder		  1
@@ -1140,14 +1209,14 @@ Model {
 		Block {
 		  BlockType		  Terminator
 		  Name			  " Terminator "
-		  SID			  "7::9"
+		  SID			  "338::9"
 		  Position		  [460, 241, 480, 259]
 		  ZOrder		  3
 		}
 		Block {
 		  BlockType		  Outport
 		  Name			  "y"
-		  SID			  "7::6"
+		  SID			  "338::6"
 		  Position		  [460, 101, 480, 119]
 		  ZOrder		  -6
 		  IconDisplay		  "Port number"
@@ -1190,25 +1259,23 @@ Model {
 	    Block {
 	      BlockType		      Fcn
 	      Name		      "Fcn"
-	      SID		      "8"
+	      SID		      "339"
 	      Position		      [65, 70, 125, 100]
 	      ZOrder		      -4
 	      Expr		      "(u-4.5511)/0.0909"
-	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Limitacion sensor"
-	      SID		      "9"
+	      SID		      "340"
 	      Position		      [145, 110, 195, 140]
 	      ZOrder		      -5
 	      Value		      "SL"
-	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      Sum
 	      Name		      "h"
-	      SID		      "10"
+	      SID		      "341"
 	      Ports		      [2, 1]
 	      Position		      [180, 62, 210, 93]
 	      ZOrder		      -6
@@ -1216,12 +1283,11 @@ Model {
 	      InputSameDT	      off
 	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
 	      SaturateOnIntegerOverflow	off
-	      SampleTime	      "Ts"
 	    }
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Level"
-	      SID		      "11"
+	      SID		      "342"
 	      Position		      [375, 88, 405, 102]
 	      ZOrder		      -7
 	      IconDisplay	      "Port number"
@@ -1267,74 +1333,65 @@ Model {
 	  }
 	}
 	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn"
+	  SID			  "789"
+	  Position		  [195, 170, 255, 200]
+	  ZOrder		  6
+	  Expr			  "(u>=7500)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn1"
+	  SID			  "790"
+	  Position		  [260, 195, 320, 225]
+	  ZOrder		  7
+	  Expr			  "(u>=5000)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn2"
+	  SID			  "791"
+	  Position		  [325, 220, 385, 250]
+	  ZOrder		  8
+	  Expr			  "(u>=2500)"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn3"
+	  SID			  "792"
+	  Position		  [815, 282, 900, 318]
+	  ZOrder		  9
+	  Expr			  "6.2026*u-24.9486"
+	}
+	Block {
+	  BlockType		  Fcn
+	  Name			  "Fcn4"
+	  SID			  "793"
+	  Position		  [815, 310, 900, 340]
+	  ZOrder		  10
+	  Expr			  "6.2026*u-24.9486"
+	}
+	Block {
 	  BlockType		  Ground
 	  Name			  "Ground"
-	  SID			  "119"
-	  Position		  [295, 105, 315, 125]
-	  ZOrder		  2
+	  SID			  "807"
+	  Position		  [360, 125, 380, 145]
+	  ZOrder		  11
 	}
 	Block {
 	  BlockType		  Ground
 	  Name			  "Ground1"
-	  SID			  "120"
-	  Position		  [295, 130, 315, 150]
-	  ZOrder		  3
-	}
-	Block {
-	  BlockType		  Ground
-	  Name			  "Ground2"
-	  SID			  "121"
-	  Position		  [295, 155, 315, 175]
-	  ZOrder		  4
-	}
-	Block {
-	  BlockType		  Ground
-	  Name			  "Ground3"
-	  SID			  "122"
-	  Position		  [295, 180, 315, 200]
-	  ZOrder		  5
-	}
-	Block {
-	  BlockType		  Ground
-	  Name			  "Ground4"
-	  SID			  "123"
-	  Position		  [295, 205, 315, 225]
-	  ZOrder		  6
-	}
-	Block {
-	  BlockType		  Ground
-	  Name			  "Ground5"
-	  SID			  "124"
-	  Position		  [295, 230, 315, 250]
-	  ZOrder		  7
-	}
-	Block {
-	  BlockType		  Ground
-	  Name			  "Ground6"
-	  SID			  "125"
-	  Position		  [295, 255, 315, 275]
-	  ZOrder		  8
-	}
-	Block {
-	  BlockType		  Ground
-	  Name			  "Ground7"
-	  SID			  "126"
-	  Position		  [295, 280, 315, 300]
-	  ZOrder		  9
-	}
-	Block {
-	  BlockType		  Ground
-	  Name			  "Ground8"
-	  SID			  "127"
-	  Position		  [295, 305, 315, 325]
-	  ZOrder		  10
+	  SID			  "808"
+	  Position		  [365, 325, 385, 345]
+	  ZOrder		  12
 	}
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Parada de emergencia"
-	  SID			  "12"
+	  SID			  "343"
 	  Ports			  [1]
-	  Position		  [860, 126, 910, 164]
+	  Position		  [935, 146, 985, 184]
 	  ZOrder		  -3
 	  BackgroundColor	  "red"
 	  MinAlgLoopOccurrences	  off
@@ -1346,23 +1403,23 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    25
+	    $ObjectID		    27
 	    $ClassName		    "Simulink.Mask"
 	    Type		    "Parada de Emergencia"
 	    Description		    "Define el umbral de altura para activar la parada de emergencia."
 	    Object {
 	      $PropName		      "Parameters"
-	      $ObjectID		      26
+	      $ObjectID		      28
 	      $ClassName	      "Simulink.MaskParameter"
 	      Type		      "edit"
 	      Name		      "ML"
 	      Prompt		      "Umbral maximo altura"
-	      Value		      "65"
+	      Value		      "70"
 	    }
 	  }
 	  System {
 	    Name		    "Parada de emergencia"
-	    Location		    [183, 63, 1425, 917]
+	    Location		    [0, 0, 960, 1040]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -1378,7 +1435,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Level"
-	      SID		      "13"
+	      SID		      "344"
 	      Position		      [25, 33, 55, 47]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -1386,7 +1443,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Logic"
-	      SID		      "14"
+	      SID		      "345"
 	      Ports		      [2, 1]
 	      Position		      [90, 27, 155, 83]
 	      ZOrder		      -2
@@ -1420,7 +1477,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "u"
-		  SID			  "14::1"
+		  SID			  "345::1"
 		  Position		  [20, 101, 40, 119]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -1428,7 +1485,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "u1"
-		  SID			  "14::2"
+		  SID			  "345::2"
 		  Position		  [20, 136, 40, 154]
 		  ZOrder		  -2
 		  Port			  "2"
@@ -1437,7 +1494,7 @@ Model {
 		Block {
 		  BlockType		  Demux
 		  Name			  " Demux "
-		  SID			  "14::8"
+		  SID			  "345::8"
 		  Ports			  [1, 1]
 		  Position		  [270, 230, 320, 270]
 		  ZOrder		  2
@@ -1446,8 +1503,8 @@ Model {
 		Block {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
-		  SID			  "14::7"
-		  Tag			  "Stateflow S-Function PlantaNivel 3"
+		  SID			  "345::7"
+		  Tag			  "Stateflow S-Function PlantaNivel 2"
 		  Ports			  [2, 2]
 		  Position		  [180, 100, 230, 160]
 		  ZOrder		  1
@@ -1464,14 +1521,14 @@ Model {
 		Block {
 		  BlockType		  Terminator
 		  Name			  " Terminator "
-		  SID			  "14::9"
+		  SID			  "345::9"
 		  Position		  [460, 241, 480, 259]
 		  ZOrder		  3
 		}
 		Block {
 		  BlockType		  Outport
 		  Name			  "y"
-		  SID			  "14::6"
+		  SID			  "345::6"
 		  Position		  [460, 101, 480, 119]
 		  ZOrder		  -6
 		  IconDisplay		  "Port number"
@@ -1514,7 +1571,7 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Max. Thres."
-	      SID		      "15"
+	      SID		      "346"
 	      Position		      [25, 70, 55, 100]
 	      ZOrder		      -3
 	      Value		      "ML"
@@ -1522,7 +1579,7 @@ Model {
 	    Block {
 	      BlockType		      Stop
 	      Name		      "Stop Simulation"
-	      SID		      "16"
+	      SID		      "347"
 	      Position		      [215, 37, 250, 73]
 	      ZOrder		      -4
 	      BackgroundColor	      "[0.900000, 0.214468, 0.234003]"
@@ -1551,9 +1608,9 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Planta Nivel"
-	  SID			  "17"
+	  SID			  "348"
 	  Ports			  [10, 9]
-	  Position		  [350, 79, 595, 326]
+	  Position		  [425, 99, 670, 346]
 	  ZOrder		  -4
 	  BackgroundColor	  "yellow"
 	  MinAlgLoopOccurrences	  off
@@ -1565,38 +1622,38 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    27
+	    $ObjectID		    29
 	    $ClassName		    "Simulink.Mask"
 	    Description		    "Planta de Nivel"
 	    Object {
 	      $PropName		      "Parameters"
-	      $ObjectID		      28
+	      $ObjectID		      30
 	      $ClassName	      "Simulink.MaskParameter"
 	      Type		      "edit"
 	      Name		      "Ts"
-	      Prompt		      "Tiempo Muestreo"
+	      Prompt		      "Tiempo muestreo (Ts)"
 	      Value		      "Ts"
 	    }
 	  }
 	  System {
 	    Name		    "Planta Nivel"
-	    Location		    [183, 63, 1425, 917]
-	    Open		    off
+	    Location		    [0, 0, 960, 1040]
+	    Open		    on
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
 	    PaperPositionMode	    "auto"
-	    PaperType		    "A4"
-	    PaperUnits		    "centimeters"
-	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "150"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Variador"
-	      SID		      "18"
+	      SID		      "349"
 	      Position		      [25, 23, 55, 37]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -1604,7 +1661,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Val Solenoide"
-	      SID		      "19"
+	      SID		      "350"
 	      Position		      [25, 53, 55, 67]
 	      ZOrder		      -2
 	      Port		      "2"
@@ -1613,7 +1670,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Val Motorizada"
-	      SID		      "20"
+	      SID		      "351"
 	      Position		      [25, 83, 55, 97]
 	      ZOrder		      -3
 	      Port		      "3"
@@ -1622,7 +1679,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Calefactor 1"
-	      SID		      "21"
+	      SID		      "352"
 	      Position		      [25, 113, 55, 127]
 	      ZOrder		      -4
 	      Port		      "4"
@@ -1631,7 +1688,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Calefactor 2"
-	      SID		      "22"
+	      SID		      "353"
 	      Position		      [25, 143, 55, 157]
 	      ZOrder		      -5
 	      Port		      "5"
@@ -1640,7 +1697,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Calefactor 3"
-	      SID		      "23"
+	      SID		      "354"
 	      Position		      [25, 173, 55, 187]
 	      ZOrder		      -6
 	      Port		      "6"
@@ -1649,7 +1706,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Agitador"
-	      SID		      "24"
+	      SID		      "355"
 	      Position		      [25, 203, 55, 217]
 	      ZOrder		      -7
 	      Port		      "7"
@@ -1658,7 +1715,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Solenoide 1"
-	      SID		      "25"
+	      SID		      "356"
 	      Position		      [25, 233, 55, 247]
 	      ZOrder		      -8
 	      Port		      "8"
@@ -1667,7 +1724,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Solenoide 2"
-	      SID		      "26"
+	      SID		      "357"
 	      Position		      [25, 263, 55, 277]
 	      ZOrder		      -9
 	      Port		      "9"
@@ -1676,7 +1733,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Luces lab."
-	      SID		      "27"
+	      SID		      "358"
 	      Position		      [25, 293, 55, 307]
 	      ZOrder		      -10
 	      Port		      "10"
@@ -1685,7 +1742,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Calibrador"
-	      SID		      "28"
+	      SID		      "359"
 	      Ports		      [1, 1]
 	      Position		      [335, 36, 385, 54]
 	      ZOrder		      -11
@@ -1698,23 +1755,23 @@ Model {
 	      MaskHideContents	      off
 	      System {
 		Name			"Calibrador"
-		Location		[183, 63, 1425, 917]
+		Location		[0, 0, 960, 1040]
 		Open			off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "29"
+		  SID			  "360"
 		  Position		  [25, 33, 55, 47]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -1722,7 +1779,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant"
-		  SID			  "30"
+		  SID			  "361"
 		  Position		  [80, 80, 110, 110]
 		  ZOrder		  -2
 		  Value			  "0"
@@ -1730,14 +1787,14 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "31"
+		  SID			  "362"
 		  Position		  [80, 25, 110, 55]
 		  ZOrder		  -3
 		}
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "32"
+		  SID			  "363"
 		  Ports			  [2, 1]
 		  Position		  [145, 30, 165, 50]
 		  ZOrder		  -4
@@ -1750,7 +1807,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "33"
+		  SID			  "364"
 		  Position		  [190, 33, 220, 47]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -1785,7 +1842,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Calibrador1"
-	      SID		      "34"
+	      SID		      "365"
 	      Ports		      [1, 1]
 	      Position		      [335, 66, 385, 84]
 	      ZOrder		      -12
@@ -1798,23 +1855,23 @@ Model {
 	      MaskHideContents	      off
 	      System {
 		Name			"Calibrador1"
-		Location		[183, 63, 1425, 917]
+		Location		[0, 0, 960, 1040]
 		Open			off
 		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "35"
+		  SID			  "366"
 		  Position		  [25, 33, 55, 47]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -1822,7 +1879,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant"
-		  SID			  "36"
+		  SID			  "367"
 		  Position		  [80, 80, 110, 110]
 		  ZOrder		  -2
 		  Value			  "0"
@@ -1830,14 +1887,14 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "37"
+		  SID			  "368"
 		  Position		  [80, 25, 110, 55]
 		  ZOrder		  -3
 		}
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "38"
+		  SID			  "369"
 		  Ports			  [2, 1]
 		  Position		  [145, 30, 165, 50]
 		  ZOrder		  -4
@@ -1850,7 +1907,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "39"
+		  SID			  "370"
 		  Position		  [190, 33, 220, 47]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -1885,7 +1942,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Calibrador2"
-	      SID		      "40"
+	      SID		      "371"
 	      Ports		      [1, 1]
 	      Position		      [335, 96, 385, 114]
 	      ZOrder		      -13
@@ -1905,16 +1962,16 @@ Model {
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "41"
+		  SID			  "372"
 		  Position		  [25, 33, 55, 47]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -1922,7 +1979,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant"
-		  SID			  "42"
+		  SID			  "373"
 		  Position		  [80, 80, 110, 110]
 		  ZOrder		  -2
 		  Value			  "0"
@@ -1930,14 +1987,14 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "43"
+		  SID			  "374"
 		  Position		  [80, 25, 110, 55]
 		  ZOrder		  -3
 		}
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "44"
+		  SID			  "375"
 		  Ports			  [2, 1]
 		  Position		  [145, 30, 165, 50]
 		  ZOrder		  -4
@@ -1950,7 +2007,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "45"
+		  SID			  "376"
 		  Position		  [190, 33, 220, 47]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -1985,7 +2042,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Calibrador3"
-	      SID		      "46"
+	      SID		      "377"
 	      Ports		      [1, 1]
 	      Position		      [335, 126, 385, 144]
 	      ZOrder		      -14
@@ -2005,16 +2062,16 @@ Model {
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "47"
+		  SID			  "378"
 		  Position		  [25, 33, 55, 47]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -2022,7 +2079,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant"
-		  SID			  "48"
+		  SID			  "379"
 		  Position		  [80, 80, 110, 110]
 		  ZOrder		  -2
 		  Value			  "0"
@@ -2030,14 +2087,14 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "49"
+		  SID			  "380"
 		  Position		  [80, 25, 110, 55]
 		  ZOrder		  -3
 		}
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "50"
+		  SID			  "381"
 		  Ports			  [2, 1]
 		  Position		  [145, 30, 165, 50]
 		  ZOrder		  -4
@@ -2050,7 +2107,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "51"
+		  SID			  "382"
 		  Position		  [190, 33, 220, 47]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -2085,7 +2142,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Calibrador4"
-	      SID		      "52"
+	      SID		      "383"
 	      Ports		      [1, 1]
 	      Position		      [335, 156, 385, 174]
 	      ZOrder		      -15
@@ -2105,16 +2162,16 @@ Model {
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "53"
+		  SID			  "384"
 		  Position		  [25, 33, 55, 47]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -2122,7 +2179,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant"
-		  SID			  "54"
+		  SID			  "385"
 		  Position		  [80, 80, 110, 110]
 		  ZOrder		  -2
 		  Value			  "0"
@@ -2130,14 +2187,14 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "55"
+		  SID			  "386"
 		  Position		  [80, 25, 110, 55]
 		  ZOrder		  -3
 		}
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "56"
+		  SID			  "387"
 		  Ports			  [2, 1]
 		  Position		  [145, 30, 165, 50]
 		  ZOrder		  -4
@@ -2150,7 +2207,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "57"
+		  SID			  "388"
 		  Position		  [190, 33, 220, 47]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -2185,7 +2242,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Calibrador5"
-	      SID		      "58"
+	      SID		      "389"
 	      Ports		      [1, 1]
 	      Position		      [335, 186, 385, 204]
 	      ZOrder		      -16
@@ -2205,16 +2262,16 @@ Model {
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "59"
+		  SID			  "390"
 		  Position		  [25, 33, 55, 47]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -2222,7 +2279,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant"
-		  SID			  "60"
+		  SID			  "391"
 		  Position		  [80, 80, 110, 110]
 		  ZOrder		  -2
 		  Value			  "0"
@@ -2230,14 +2287,14 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "61"
+		  SID			  "392"
 		  Position		  [80, 25, 110, 55]
 		  ZOrder		  -3
 		}
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "62"
+		  SID			  "393"
 		  Ports			  [2, 1]
 		  Position		  [145, 30, 165, 50]
 		  ZOrder		  -4
@@ -2250,7 +2307,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "63"
+		  SID			  "394"
 		  Position		  [190, 33, 220, 47]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -2285,7 +2342,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Calibrador6"
-	      SID		      "64"
+	      SID		      "395"
 	      Ports		      [1, 1]
 	      Position		      [335, 216, 385, 234]
 	      ZOrder		      -17
@@ -2305,16 +2362,16 @@ Model {
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "65"
+		  SID			  "396"
 		  Position		  [25, 33, 55, 47]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -2322,7 +2379,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant"
-		  SID			  "66"
+		  SID			  "397"
 		  Position		  [80, 80, 110, 110]
 		  ZOrder		  -2
 		  Value			  "0"
@@ -2330,14 +2387,14 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "67"
+		  SID			  "398"
 		  Position		  [80, 25, 110, 55]
 		  ZOrder		  -3
 		}
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "68"
+		  SID			  "399"
 		  Ports			  [2, 1]
 		  Position		  [145, 30, 165, 50]
 		  ZOrder		  -4
@@ -2350,7 +2407,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "69"
+		  SID			  "400"
 		  Position		  [190, 33, 220, 47]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -2385,7 +2442,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Calibrador7"
-	      SID		      "70"
+	      SID		      "401"
 	      Ports		      [1, 1]
 	      Position		      [335, 246, 385, 264]
 	      ZOrder		      -18
@@ -2405,16 +2462,16 @@ Model {
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "71"
+		  SID			  "402"
 		  Position		  [25, 33, 55, 47]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -2422,7 +2479,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant"
-		  SID			  "72"
+		  SID			  "403"
 		  Position		  [80, 80, 110, 110]
 		  ZOrder		  -2
 		  Value			  "0"
@@ -2430,14 +2487,14 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "73"
+		  SID			  "404"
 		  Position		  [80, 25, 110, 55]
 		  ZOrder		  -3
 		}
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "74"
+		  SID			  "405"
 		  Ports			  [2, 1]
 		  Position		  [145, 30, 165, 50]
 		  ZOrder		  -4
@@ -2450,7 +2507,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "75"
+		  SID			  "406"
 		  Position		  [190, 33, 220, 47]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -2485,7 +2542,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Calibrador8"
-	      SID		      "76"
+	      SID		      "407"
 	      Ports		      [1, 1]
 	      Position		      [335, 276, 385, 294]
 	      ZOrder		      -19
@@ -2505,16 +2562,16 @@ Model {
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
 		PaperPositionMode	"auto"
-		PaperType		"A4"
-		PaperUnits		"centimeters"
-		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		PaperType		"usletter"
+		PaperUnits		"inches"
+		TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 		TiledPageScale		1
 		ShowPageBoundaries	off
 		ZoomFactor		"100"
 		Block {
 		  BlockType		  Inport
 		  Name			  "In"
-		  SID			  "77"
+		  SID			  "408"
 		  Position		  [25, 33, 55, 47]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -2522,7 +2579,7 @@ Model {
 		Block {
 		  BlockType		  Constant
 		  Name			  "Constant"
-		  SID			  "78"
+		  SID			  "409"
 		  Position		  [80, 80, 110, 110]
 		  ZOrder		  -2
 		  Value			  "0"
@@ -2530,14 +2587,14 @@ Model {
 		Block {
 		  BlockType		  Gain
 		  Name			  "Gain"
-		  SID			  "79"
+		  SID			  "410"
 		  Position		  [80, 25, 110, 55]
 		  ZOrder		  -3
 		}
 		Block {
 		  BlockType		  Sum
 		  Name			  "Sum"
-		  SID			  "80"
+		  SID			  "411"
 		  Ports			  [2, 1]
 		  Position		  [145, 30, 165, 50]
 		  ZOrder		  -4
@@ -2550,7 +2607,7 @@ Model {
 		Block {
 		  BlockType		  Outport
 		  Name			  "Out"
-		  SID			  "81"
+		  SID			  "412"
 		  Position		  [190, 33, 220, 47]
 		  ZOrder		  -5
 		  IconDisplay		  "Port number"
@@ -2585,7 +2642,7 @@ Model {
 	    Block {
 	      BlockType		      Demux
 	      Name		      "Demux"
-	      SID		      "82"
+	      SID		      "413"
 	      Ports		      [1, 9]
 	      Position		      [250, 37, 255, 293]
 	      ZOrder		      -20
@@ -2596,7 +2653,7 @@ Model {
 	    Block {
 	      BlockType		      Mux
 	      Name		      "Mux"
-	      SID		      "83"
+	      SID		      "414"
 	      Ports		      [10, 1]
 	      Position		      [80, 21, 85, 309]
 	      ZOrder		      -21
@@ -2607,9 +2664,9 @@ Model {
 	    Block {
 	      BlockType		      S-Function
 	      Name		      "S-Function"
-	      SID		      "84"
+	      SID		      "415"
 	      Ports		      [1, 1]
-	      Position		      [140, 150, 200, 180]
+	      Position		      [140, 150, 210, 180]
 	      ZOrder		      -22
 	      FunctionName	      "SPlantaNivel"
 	      Parameters	      "Ts"
@@ -2618,30 +2675,30 @@ Model {
 	    Block {
 	      BlockType		      Terminator
 	      Name		      "Terminator"
-	      SID		      "85"
+	      SID		      "416"
 	      Position		      [205, 35, 225, 55]
 	      ZOrder		      -23
 	    }
 	    Block {
 	      BlockType		      Reference
 	      Name		      "Timer Function"
-	      SID		      "86"
+	      SID		      "417"
 	      Ports		      [0, 1]
 	      Position		      [100, 26, 155, 64]
 	      ZOrder		      -24
 	      BackgroundColor	      "lightBlue"
-	      Priority		      "584230560"
+	      Priority		      "554225952"
 	      LibraryVersion	      "1.3"
 	      SourceBlock	      "RT/Timer Function"
 	      SourceType	      "RTBlock"
-	      step		      "1000*Ts"
+	      step		      "Ts*1000"
 	      TaskPriority	      "NORMAL"
 	      ThPriority	      "TIME CRITICAL"
 	    }
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Nivel 1 (Conico)"
-	      SID		      "87"
+	      SID		      "418"
 	      Position		      [465, 38, 495, 52]
 	      ZOrder		      -25
 	      IconDisplay	      "Port number"
@@ -2649,7 +2706,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Nivel 2 (Recirculacion)"
-	      SID		      "88"
+	      SID		      "419"
 	      Position		      [465, 68, 495, 82]
 	      ZOrder		      -26
 	      Port		      "2"
@@ -2658,7 +2715,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Nivel 3 (Ultrasonico)"
-	      SID		      "89"
+	      SID		      "420"
 	      Position		      [465, 98, 495, 112]
 	      ZOrder		      -27
 	      Port		      "3"
@@ -2667,7 +2724,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Flujo"
-	      SID		      "90"
+	      SID		      "421"
 	      Position		      [465, 128, 495, 142]
 	      ZOrder		      -28
 	      Port		      "4"
@@ -2676,7 +2733,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Presion Bomba 1"
-	      SID		      "91"
+	      SID		      "422"
 	      Position		      [465, 158, 495, 172]
 	      ZOrder		      -29
 	      Port		      "5"
@@ -2685,7 +2742,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Presion Bomba 2"
-	      SID		      "92"
+	      SID		      "423"
 	      Position		      [465, 278, 495, 292]
 	      ZOrder		      -30
 	      Port		      "6"
@@ -2694,7 +2751,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Temp 1 (Cuadrado)"
-	      SID		      "93"
+	      SID		      "424"
 	      Position		      [465, 188, 495, 202]
 	      ZOrder		      -31
 	      Port		      "7"
@@ -2703,7 +2760,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Temp 2 (Conico)"
-	      SID		      "94"
+	      SID		      "425"
 	      Position		      [465, 218, 495, 232]
 	      ZOrder		      -32
 	      Port		      "8"
@@ -2712,7 +2769,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "Temp 3 (Recirculacion)"
-	      SID		      "95"
+	      SID		      "426"
 	      Position		      [465, 248, 495, 262]
 	      ZOrder		      -33
 	      Port		      "9"
@@ -2909,9 +2966,9 @@ Model {
 	Block {
 	  BlockType		  SubSystem
 	  Name			  "Sistema de descarga"
-	  SID			  "96"
+	  SID			  "427"
 	  Ports			  [2, 1]
-	  Position		  [140, 19, 315, 86]
+	  Position		  [205, 16, 380, 89]
 	  ZOrder		  -5
 	  MinAlgLoopOccurrences	  off
 	  PropExecContextOutsideSubsystem off
@@ -2922,20 +2979,20 @@ Model {
 	  MaskHideContents	  off
 	  Object {
 	    $PropName		    "MaskObject"
-	    $ObjectID		    29
+	    $ObjectID		    31
 	    $ClassName		    "Simulink.Mask"
 	    Array {
 	      Type		      "Simulink.MaskParameter"
 	      Dimension		      2
 	      Object {
-		$ObjectID		30
+		$ObjectID		32
 		Type			"edit"
 		Name			"SA"
 		Prompt			"Ajuste de sensor"
 		Value			"5.28"
 	      }
 	      Object {
-		$ObjectID		31
+		$ObjectID		33
 		Type			"edit"
 		Name			"OT"
 		Prompt			"Umbral de apagado"
@@ -2946,7 +3003,7 @@ Model {
 	  }
 	  System {
 	    Name		    "Sistema de descarga"
-	    Location		    [183, 63, 1425, 917]
+	    Location		    [0, 0, 960, 1040]
 	    Open		    off
 	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
@@ -2958,11 +3015,11 @@ Model {
 	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
 	    TiledPageScale	    1
 	    ShowPageBoundaries	    off
-	    ZoomFactor		    "100"
+	    ZoomFactor		    "200"
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Variador"
-	      SID		      "97"
+	      SID		      "428"
 	      Position		      [30, 33, 60, 47]
 	      ZOrder		      -1
 	      IconDisplay	      "Port number"
@@ -2970,7 +3027,7 @@ Model {
 	    Block {
 	      BlockType		      Inport
 	      Name		      "Altura recirculacion"
-	      SID		      "98"
+	      SID		      "429"
 	      Position		      [70, 193, 100, 207]
 	      ZOrder		      -2
 	      Port		      "2"
@@ -2979,7 +3036,7 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Ajuste sensor"
-	      SID		      "99"
+	      SID		      "430"
 	      Position		      [70, 230, 100, 260]
 	      ZOrder		      -3
 	      Value		      "SA"
@@ -2987,7 +3044,7 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Constant"
-	      SID		      "100"
+	      SID		      "431"
 	      Position		      [180, 95, 210, 125]
 	      ZOrder		      -4
 	      Value		      "1-D"
@@ -2995,7 +3052,7 @@ Model {
 	    Block {
 	      BlockType		      Saturate
 	      Name		      "ENTRADA\nf[%]=0:100"
-	      SID		      "101"
+	      SID		      "432"
 	      Ports		      [1, 1]
 	      Position		      [180, 25, 210, 55]
 	      ZOrder		      -5
@@ -3007,7 +3064,7 @@ Model {
 	    Block {
 	      BlockType		      SubSystem
 	      Name		      "Secuencia de Descarga"
-	      SID		      "102"
+	      SID		      "433"
 	      Ports		      [3, 1]
 	      Position		      [160, 174, 255, 316]
 	      ZOrder		      -6
@@ -3041,7 +3098,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "u"
-		  SID			  "102::1"
+		  SID			  "433::1"
 		  Position		  [20, 101, 40, 119]
 		  ZOrder		  -1
 		  IconDisplay		  "Port number"
@@ -3049,7 +3106,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "u2"
-		  SID			  "102::2"
+		  SID			  "433::2"
 		  Position		  [20, 136, 40, 154]
 		  ZOrder		  -2
 		  Port			  "2"
@@ -3058,7 +3115,7 @@ Model {
 		Block {
 		  BlockType		  Inport
 		  Name			  "u3"
-		  SID			  "102::3"
+		  SID			  "433::3"
 		  Position		  [20, 171, 40, 189]
 		  ZOrder		  -3
 		  Port			  "3"
@@ -3067,7 +3124,7 @@ Model {
 		Block {
 		  BlockType		  Demux
 		  Name			  " Demux "
-		  SID			  "102::9"
+		  SID			  "433::9"
 		  Ports			  [1, 1]
 		  Position		  [270, 230, 320, 270]
 		  ZOrder		  2
@@ -3076,8 +3133,8 @@ Model {
 		Block {
 		  BlockType		  S-Function
 		  Name			  " SFunction "
-		  SID			  "102::8"
-		  Tag			  "Stateflow S-Function PlantaNivel 1"
+		  SID			  "433::8"
+		  Tag			  "Stateflow S-Function PlantaNivel 3"
 		  Ports			  [3, 2]
 		  Position		  [180, 100, 230, 180]
 		  ZOrder		  1
@@ -3094,14 +3151,14 @@ Model {
 		Block {
 		  BlockType		  Terminator
 		  Name			  " Terminator "
-		  SID			  "102::10"
+		  SID			  "433::10"
 		  Position		  [460, 241, 480, 259]
 		  ZOrder		  3
 		}
 		Block {
 		  BlockType		  Outport
 		  Name			  "y"
-		  SID			  "102::7"
+		  SID			  "433::7"
 		  Position		  [460, 101, 480, 119]
 		  ZOrder		  -7
 		  IconDisplay		  "Port number"
@@ -3150,7 +3207,7 @@ Model {
 	    Block {
 	      BlockType		      Switch
 	      Name		      "Switch"
-	      SID		      "103"
+	      SID		      "434"
 	      Position		      [305, 31, 340, 69]
 	      ZOrder		      -7
 	      ShowName		      off
@@ -3162,7 +3219,7 @@ Model {
 	    Block {
 	      BlockType		      Constant
 	      Name		      "Umbral apagado"
-	      SID		      "104"
+	      SID		      "435"
 	      Position		      [70, 275, 100, 305]
 	      ZOrder		      -8
 	      Value		      "OT"
@@ -3170,7 +3227,7 @@ Model {
 	    Block {
 	      BlockType		      Outport
 	      Name		      "% Frecuencia"
-	      SID		      "105"
+	      SID		      "436"
 	      Position		      [395, 43, 425, 57]
 	      ZOrder		      -9
 	      IconDisplay	      "Port number"
@@ -3230,94 +3287,73 @@ Model {
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminaor2"
-	  SID			  "106"
-	  Position		  [610, 220, 630, 240]
+	  SID			  "437"
+	  Position		  [685, 240, 705, 260]
 	  ZOrder		  -6
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Terminator"
-	  SID			  "107"
-	  Position		  [610, 170, 630, 190]
+	  SID			  "438"
+	  Position		  [685, 190, 705, 210]
 	  ZOrder		  -7
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
-	  Name			  "Terminator1"
-	  SID			  "108"
-	  Position		  [610, 295, 630, 315]
-	  ZOrder		  -8
+	  Name			  "Terminator2"
+	  SID			  "508"
+	  Position		  [685, 165, 705, 185]
+	  ZOrder		  4
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "Trminator1"
-	  SID			  "109"
-	  Position		  [610, 195, 630, 215]
+	  SID			  "440"
+	  Position		  [685, 215, 705, 235]
 	  ZOrder		  -9
-	  ShowName		  off
-	}
-	Block {
-	  BlockType		  Fcn
-	  Name			  "cm"
-	  SID			  "110"
-	  Position		  [770, 195, 830, 225]
-	  ZOrder		  -10
-	  Expr			  "3.42348*(u-4)"
-	  SampleTime		  "Ts"
-	}
-	Block {
-	  BlockType		  Terminator
-	  Name			  "ermnator4"
-	  SID			  "111"
-	  Position		  [610, 270, 630, 290]
-	  ZOrder		  -11
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Terminator
 	  Name			  "rminator3"
-	  SID			  "112"
-	  Position		  [610, 245, 630, 265]
+	  SID			  "443"
+	  Position		  [685, 265, 705, 285]
 	  ZOrder		  -12
 	  ShowName		  off
 	}
 	Block {
 	  BlockType		  Outport
 	  Name			  "Nivel Estanque Cónico"
-	  SID			  "113"
-	  Position		  [965, 98, 995, 112]
+	  SID			  "444"
+	  Position		  [1040, 118, 1070, 132]
 	  ZOrder		  -13
 	  IconDisplay		  "Port number"
 	}
 	Block {
 	  BlockType		  Outport
-	  Name			  "Nivel Estanque Cuadrado\n"
-	  SID			  "114"
-	  Position		  [965, 203, 995, 217]
+	  Name			  "Temperatura Estanque Cónico\n"
+	  SID			  "445"
+	  Position		  [1040, 293, 1070, 307]
 	  ZOrder		  -14
 	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Temperatura Estanque Recirculación"
+	  SID			  "509"
+	  Position		  [1040, 318, 1070, 332]
+	  ZOrder		  5
+	  Port			  "3"
 	  IconDisplay		  "Port number"
 	}
 	Line {
 	  SrcBlock		  "Planta Nivel"
 	  SrcPort		  1
 	  DstBlock		  "Ajuste de sensor"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "Planta Nivel"
-	  SrcPort		  3
-	  Points		  [80, 0; 0, 55]
-	  DstBlock		  "cm"
-	  DstPort		  1
-	}
-	Line {
-	  SrcBlock		  "cm"
-	  SrcPort		  1
-	  DstBlock		  "Nivel Estanque Cuadrado\n"
 	  DstPort		  1
 	}
 	Line {
@@ -3343,14 +3379,14 @@ Model {
 	Line {
 	  SrcBlock		  "Planta Nivel"
 	  SrcPort		  2
-	  Points		  [55, 0; 0, 260; -591, 0; 0, -320]
+	  Points		  [55, 0; 0, 260; -596, 0; 0, -340]
 	  DstBlock		  "Sistema de descarga"
 	  DstPort		  2
 	}
 	Line {
 	  SrcBlock		  "Sistema de descarga"
 	  SrcPort		  1
-	  Points		  [12, 0; 0, 35]
+	  Points		  [17, 0; 0, 55]
 	  DstBlock		  "Planta Nivel"
 	  DstPort		  1
 	}
@@ -3381,80 +3417,125 @@ Model {
 	Line {
 	  SrcBlock		  "Planta Nivel"
 	  SrcPort		  8
-	  DstBlock		  "ermnator4"
+	  DstBlock		  "Fcn3"
 	  DstPort		  1
 	}
 	Line {
 	  SrcBlock		  "Planta Nivel"
 	  SrcPort		  9
-	  DstBlock		  "Terminator1"
+	  DstBlock		  "Fcn4"
 	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "Ground"
+	  SrcBlock		  "Calefactor"
 	  SrcPort		  1
-	  DstBlock		  "Planta Nivel"
-	  DstPort		  2
+	  Points		  [125, 0]
+	  Branch {
+	    Points		    [0, 25]
+	    Branch {
+	      Points		      [0, 25]
+	      DstBlock		      "Fcn2"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "Fcn1"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "Fcn"
+	    DstPort		    1
+	  }
 	}
 	Line {
-	  SrcBlock		  "Ground1"
+	  SrcBlock		  "Agitador"
 	  SrcPort		  1
+	  Points		  [338, 0; 0, -50]
 	  DstBlock		  "Planta Nivel"
-	  DstPort		  3
+	  DstPort		  7
 	}
 	Line {
-	  SrcBlock		  "Ground2"
+	  SrcBlock		  "Planta Nivel"
+	  SrcPort		  3
+	  DstBlock		  "Terminator2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Fcn"
 	  SrcPort		  1
 	  DstBlock		  "Planta Nivel"
 	  DstPort		  4
 	}
 	Line {
-	  SrcBlock		  "Ground3"
+	  SrcBlock		  "Fcn1"
 	  SrcPort		  1
 	  DstBlock		  "Planta Nivel"
 	  DstPort		  5
 	}
 	Line {
-	  SrcBlock		  "Ground4"
+	  SrcBlock		  "Fcn2"
 	  SrcPort		  1
 	  DstBlock		  "Planta Nivel"
 	  DstPort		  6
 	}
 	Line {
-	  SrcBlock		  "Ground5"
+	  SrcBlock		  "Fcn3"
 	  SrcPort		  1
-	  DstBlock		  "Planta Nivel"
-	  DstPort		  7
+	  DstBlock		  "Temperatura Estanque Cónico\n"
+	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "Ground6"
+	  SrcBlock		  "Fcn4"
 	  SrcPort		  1
-	  DstBlock		  "Planta Nivel"
-	  DstPort		  8
+	  DstBlock		  "Temperatura Estanque Recirculación"
+	  DstPort		  1
 	}
 	Line {
-	  SrcBlock		  "Ground7"
+	  SrcBlock		  "Ground"
 	  SrcPort		  1
-	  DstBlock		  "Planta Nivel"
-	  DstPort		  9
+	  Points		  [15, 0]
+	  Branch {
+	    Points		    [0, 25]
+	    DstBlock		    "Planta Nivel"
+	    DstPort		    3
+	  }
+	  Branch {
+	    DstBlock		    "Planta Nivel"
+	    DstPort		    2
+	  }
 	}
 	Line {
-	  SrcBlock		  "Ground8"
+	  SrcBlock		  "Ground1"
 	  SrcPort		  1
-	  DstBlock		  "Planta Nivel"
-	  DstPort		  10
+	  Points		  [15, 0]
+	  Branch {
+	    DstBlock		    "Planta Nivel"
+	    DstPort		    10
+	  }
+	  Branch {
+	    Points		    [0, -25]
+	    Branch {
+	      DstBlock		      "Planta Nivel"
+	      DstPort		      9
+	    }
+	    Branch {
+	      Points		      [0, -25]
+	      DstBlock		      "Planta Nivel"
+	      DstPort		      8
+	    }
+	  }
 	}
       }
     }
     Block {
       BlockType		      Scope
       Name		      "Scope"
-      SID		      "116"
+      SID		      "803"
       Ports		      [1]
-      Position		      [665, 304, 695, 336]
-      ZOrder		      1
+      Position		      [1370, 279, 1400, 311]
+      ZOrder		      648
       Floating		      off
-      Location		      [956, 432, 1497, 787]
+      Location		      [188, 390, 1550, 1005]
       Open		      off
       NumInputPorts	      "1"
       List {
@@ -3472,22 +3553,41 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      off
-      TimeRange		      "60              "
-      YMin		      "14.75"
-      YMax		      "18"
+      YMin		      "-1"
+      YMax		      "20"
       DataFormat	      "StructureWithTime"
       SampleTime	      "0"
     }
     Block {
       BlockType		      Scope
       Name		      "Scope1"
-      SID		      "117"
+      SID		      "804"
       Ports		      [1]
-      Position		      [665, 204, 695, 236]
-      ZOrder		      2
+      Position		      [1370, 379, 1400, 411]
+      ZOrder		      649
       Floating		      off
-      Location		      [630, 402, 1688, 876]
-      Open		      on
+      Location		      [188, 390, 512, 629]
+      Open		      off
+      NumInputPorts	      "1"
+      List {
+	ListType		AxesTitles
+	axes1			"%<SignalLabel>"
+      }
+      ShowLegends	      off
+      SaveName		      "ScopeData1"
+      DataFormat	      "StructureWithTime"
+      SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      SID		      "805"
+      Ports		      [1]
+      Position		      [1370, 479, 1400, 511]
+      ZOrder		      650
+      Floating		      off
+      Location		      [188, 390, 889, 892]
+      Open		      off
       NumInputPorts	      "1"
       List {
 	ListType		AxesTitles
@@ -3504,19 +3604,29 @@ Model {
 	MarkerStyles		"none|none|none|none|none|none"
       }
       ShowLegends	      off
-      TimeRange		      "60              "
-      YMin		      "0"
-      YMax		      "17.5"
-      SaveName		      "ScopeData1"
+      YMin		      "13.1"
+      YMax		      "13.425"
+      SaveName		      "ScopeData2"
       DataFormat	      "StructureWithTime"
       SampleTime	      "0"
+    }
+    Block {
+      BlockType		      Step
+      Name		      "Step"
+      SID		      "806"
+      Position		      [785, 280, 815, 310]
+      ZOrder		      651
+      Time		      "15"
+      Before		      "50"
+      After		      "80"
+      SampleTime	      "0.1"
     }
     Block {
       BlockType		      SubSystem
       Name		      "Subsystem"
       SID		      "115"
       Ports		      []
-      Position		      [15, 14, 150, 106]
+      Position		      [625, 19, 800, 136]
       ZOrder		      -3
       ShowName		      off
       MinAlgLoopOccurrences   off
@@ -3528,7 +3638,7 @@ Model {
       MaskHideContents	      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		32
+	$ObjectID		34
 	$ClassName		"Simulink.Mask"
 	Display			"image(imread('img/logo.png'))"
 	IconFrame		"off"
@@ -3551,21 +3661,41 @@ Model {
       }
     }
     Line {
-      SrcBlock		      "Constant"
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      DstBlock		      "Estanques"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Step"
       SrcPort		      1
       DstBlock		      "Estanques"
       DstPort		      1
     }
     Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      DstBlock		      "Estanques"
+      DstPort		      2
+    }
+    Line {
+      Name		      "h"
       SrcBlock		      "Estanques"
-      SrcPort		      2
+      SrcPort		      1
       DstBlock		      "Scope"
       DstPort		      1
     }
     Line {
+      Name		      "V"
       SrcBlock		      "Estanques"
-      SrcPort		      1
+      SrcPort		      2
       DstBlock		      "Scope1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Estanques"
+      SrcPort		      3
+      DstBlock		      "Scope2"
       DstPort		      1
     }
   }
@@ -3587,19 +3717,19 @@ Stateflow {
   }
   chart {
     id			    2
-    name		    "Estanques/Sistema de descarga/Secuencia de Descarga"
-    windowPosition	    [321 287 213 385]
+    name		    "Estanques/Ajuste de sensor/Embedded\nMATLAB Function"
+    windowPosition	    [301 267 213 385]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1920 1080 1.333333333333333]
     treeNode		    [0 3 0 0]
-    firstTransition	    9
-    firstJunction	    8
+    firstTransition	    8
+    firstJunction	    7
     viewObj		    2
     visible		    1
     machine		    1
     subviewS {
     }
-    ssIdHighWaterMark	    7
+    ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
     firstData		    4
@@ -3624,8 +3754,8 @@ Stateflow {
     decomposition	    CLUSTER_STATE
     eml {
       isEML		      1
-      script		      "function y = fcn(u,u2,u3)\n% This block supports an embeddable subset of the MATLAB language.\n% "
-      "See the help menu for details. \nu=u-u2;\nif u>u3\n    y=100;\nelse\n    y=0;\nend\n    \n"
+      script		      "function y = fcn(u,u1)\n% This block supports an embeddable subset of the MATLAB language.\n% See"
+      " the help menu for details. \nif u <u1\n    y=0;\nelse\ny = u;\nend"
       editorLayout	      "100 M4x1[146 214 671 364]"
       fimathString	      "fimath(...\n'RoundMode', 'floor',...\n'OverflowMode', 'wrap',...\n'ProductMode', 'KeepLSB', "
       "'ProductWordLength', 32,...\n'SumMode', 'KeepLSB', 'SumWordLength', 32,...\n'CastBeforeSum', true)"
@@ -3681,30 +3811,8 @@ Stateflow {
   data {
     id			    6
     ssIdNumber		    6
-    name		    "u2"
-    linkNode		    [2 5 7]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	fixpt {
-	  scalingMode		  SF_FIXPT_BINARY_POINT
-	}
-      }
-      complexity	      SF_COMPLEX_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    7
-    ssIdNumber		    7
-    name		    "u3"
-    linkNode		    [2 6 0]
+    name		    "u1"
+    linkNode		    [2 5 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -3723,7 +3831,7 @@ Stateflow {
     dataType		    "Inherit: Same as Simulink"
   }
   junction {
-    id			    8
+    id			    7
     position		    [23.5747 49.5747 7]
     chart		    2
     linkNode		    [2 0 0]
@@ -3732,7 +3840,7 @@ Stateflow {
     type		    CONNECTIVE_JUNCTION
   }
   transition {
-    id			    9
+    id			    8
     labelString		    "{eML_blk_kernel();}"
     labelPosition	    [32.125 19.875 102.544 14.964]
     fontSize		    12
@@ -3740,7 +3848,7 @@ Stateflow {
       intersection	      [0 0 1 0 23.5747 14.625 0 0]
     }
     dst {
-      id		      8
+      id		      7
       intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
     }
     midPoint		    [23.5747 24.9468]
@@ -3756,21 +3864,21 @@ Stateflow {
     ssIdNumber		    2
   }
   instance {
-    id			    10
-    name		    "Estanques/Sistema de descarga/Secuencia de Descarga"
+    id			    9
+    name		    "Estanques/Ajuste de sensor/Embedded\nMATLAB Function"
     machine		    1
     chart		    2
   }
   chart {
-    id			    11
-    name		    "Estanques/Ajuste de sensor/Embedded\nMATLAB Function"
-    windowPosition	    [301 267 213 385]
+    id			    10
+    name		    "Estanques/Parada de emergencia/Logic"
+    windowPosition	    [341 307 213 385]
     viewLimits		    [0 156.75 0 153.75]
     screen		    [1 1 1920 1080 1.333333333333333]
-    treeNode		    [0 12 0 0]
-    firstTransition	    17
-    firstJunction	    16
-    viewObj		    11
+    treeNode		    [0 11 0 0]
+    firstTransition	    16
+    firstJunction	    15
+    viewObj		    10
     visible		    1
     machine		    1
     subviewS {
@@ -3778,7 +3886,7 @@ Stateflow {
     ssIdHighWaterMark	    6
     decomposition	    CLUSTER_CHART
     type		    EML_CHART
-    firstData		    13
+    firstData		    12
     chartFileNumber	    2
     disableImplicitCasting  1
     eml {
@@ -3787,168 +3895,14 @@ Stateflow {
     supportVariableSizing   0
   }
   state {
-    id			    12
+    id			    11
     labelString		    "eML_blk_kernel()"
     position		    [18 64.5 118 66]
     fontSize		    12
-    chart		    11
-    treeNode		    [11 0 0 0]
+    chart		    10
+    treeNode		    [10 0 0 0]
     superState		    SUBCHART
-    subviewer		    11
-    ssIdNumber		    1
-    type		    FUNC_STATE
-    decomposition	    CLUSTER_STATE
-    eml {
-      isEML		      1
-      script		      "function y = fcn(u,u1)\n% This block supports an embeddable subset of the MATLAB language.\n% See"
-      " the help menu for details. \nif u <u1\n    y=0;\nelse\ny = u;\nend"
-      editorLayout	      "100 M4x1[146 214 671 364]"
-      fimathString	      "fimath(...\n'RoundMode', 'floor',...\n'OverflowMode', 'wrap',...\n'ProductMode', 'KeepLSB', "
-      "'ProductWordLength', 32,...\n'SumMode', 'KeepLSB', 'SumWordLength', 32,...\n'CastBeforeSum', true)"
-      fimathForFiConstructors FimathMatlabFactoryDefault
-      emlDefaultFimath	      FimathUserSpecified
-    }
-  }
-  data {
-    id			    13
-    ssIdNumber		    4
-    name		    "u"
-    linkNode		    [11 0 14]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	fixpt {
-	  scalingMode		  SF_FIXPT_BINARY_POINT
-	}
-      }
-      complexity	      SF_COMPLEX_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    14
-    ssIdNumber		    5
-    name		    "y"
-    linkNode		    [11 13 15]
-    scope		    OUTPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	fixpt {
-	  scalingMode		  SF_FIXPT_BINARY_POINT
-	}
-      }
-      complexity	      SF_COMPLEX_INHERITED
-      frame		      SF_FRAME_NO
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  data {
-    id			    15
-    ssIdNumber		    6
-    name		    "u1"
-    linkNode		    [11 14 0]
-    scope		    INPUT_DATA
-    machine		    1
-    props {
-      array {
-	size			"-1"
-      }
-      type {
-	method			SF_INHERITED_TYPE
-	primitive		SF_DOUBLE_TYPE
-	fixpt {
-	  scalingMode		  SF_FIXPT_BINARY_POINT
-	}
-      }
-      complexity	      SF_COMPLEX_INHERITED
-    }
-    dataType		    "Inherit: Same as Simulink"
-  }
-  junction {
-    id			    16
-    position		    [23.5747 49.5747 7]
-    chart		    11
-    linkNode		    [11 0 0]
-    subviewer		    11
-    ssIdNumber		    3
-    type		    CONNECTIVE_JUNCTION
-  }
-  transition {
-    id			    17
-    labelString		    "{eML_blk_kernel();}"
-    labelPosition	    [32.125 19.875 102.544 14.964]
-    fontSize		    12
-    src {
-      intersection	      [0 0 1 0 23.5747 14.625 0 0]
-    }
-    dst {
-      id		      16
-      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
-    }
-    midPoint		    [23.5747 24.9468]
-    chart		    11
-    linkNode		    [11 0 0]
-    dataLimits		    [21.175 25.975 14.625 42.575]
-    subviewer		    11
-    drawStyle		    SMART
-    slide {
-      sticky		      BOTH_STICK
-    }
-    executionOrder	    1
-    ssIdNumber		    2
-  }
-  instance {
-    id			    18
-    name		    "Estanques/Ajuste de sensor/Embedded\nMATLAB Function"
-    machine		    1
-    chart		    11
-  }
-  chart {
-    id			    19
-    name		    "Estanques/Parada de emergencia/Logic"
-    windowPosition	    [341 307 213 385]
-    viewLimits		    [0 156.75 0 153.75]
-    screen		    [1 1 1920 1080 1.333333333333333]
-    treeNode		    [0 20 0 0]
-    firstTransition	    25
-    firstJunction	    24
-    viewObj		    19
-    visible		    1
-    machine		    1
-    subviewS {
-    }
-    ssIdHighWaterMark	    6
-    decomposition	    CLUSTER_CHART
-    type		    EML_CHART
-    firstData		    21
-    chartFileNumber	    3
-    disableImplicitCasting  1
-    eml {
-      name		      "fcn"
-    }
-    supportVariableSizing   0
-  }
-  state {
-    id			    20
-    labelString		    "eML_blk_kernel()"
-    position		    [18 64.5 118 66]
-    fontSize		    12
-    chart		    19
-    treeNode		    [19 0 0 0]
-    superState		    SUBCHART
-    subviewer		    19
+    subviewer		    10
     ssIdNumber		    1
     type		    FUNC_STATE
     decomposition	    CLUSTER_STATE
@@ -3964,10 +3918,10 @@ Stateflow {
     }
   }
   data {
-    id			    21
+    id			    12
     ssIdNumber		    4
     name		    "u"
-    linkNode		    [19 0 22]
+    linkNode		    [10 0 13]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -3986,10 +3940,10 @@ Stateflow {
     dataType		    "Inherit: Same as Simulink"
   }
   data {
-    id			    22
+    id			    13
     ssIdNumber		    5
     name		    "y"
-    linkNode		    [19 21 23]
+    linkNode		    [10 12 14]
     scope		    OUTPUT_DATA
     machine		    1
     props {
@@ -4009,10 +3963,186 @@ Stateflow {
     dataType		    "Inherit: Same as Simulink"
   }
   data {
-    id			    23
+    id			    14
     ssIdNumber		    6
     name		    "u1"
-    linkNode		    [19 22 0]
+    linkNode		    [10 13 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    15
+    position		    [23.5747 49.5747 7]
+    chart		    10
+    linkNode		    [10 0 0]
+    subviewer		    10
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    16
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [32.125 19.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      15
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    10
+    linkNode		    [10 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    10
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    17
+    name		    "Estanques/Parada de emergencia/Logic"
+    machine		    1
+    chart		    10
+  }
+  chart {
+    id			    18
+    name		    "Estanques/Sistema de descarga/Secuencia de Descarga"
+    windowPosition	    [321 287 213 385]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 1920 1080 1.333333333333333]
+    treeNode		    [0 19 0 0]
+    firstTransition	    25
+    firstJunction	    24
+    viewObj		    18
+    visible		    1
+    machine		    1
+    subviewS {
+    }
+    ssIdHighWaterMark	    7
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    20
+    chartFileNumber	    3
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+    supportVariableSizing   0
+  }
+  state {
+    id			    19
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    18
+    treeNode		    [18 0 0 0]
+    superState		    SUBCHART
+    subviewer		    18
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function y = fcn(u,u2,u3)\n% This block supports an embeddable subset of the MATLAB language.\n% "
+      "See the help menu for details. \nu=u-u2;\nif u>u3\n    y=100;\nelse\n    y=0;\nend\n    \n"
+      editorLayout	      "100 M4x1[146 214 671 364]"
+      fimathString	      "fimath(...\n'RoundMode', 'floor',...\n'OverflowMode', 'wrap',...\n'ProductMode', 'KeepLSB', "
+      "'ProductWordLength', 32,...\n'SumMode', 'KeepLSB', 'SumWordLength', 32,...\n'CastBeforeSum', true)"
+      fimathForFiConstructors FimathMatlabFactoryDefault
+      emlDefaultFimath	      FimathUserSpecified
+    }
+  }
+  data {
+    id			    20
+    ssIdNumber		    4
+    name		    "u"
+    linkNode		    [18 0 21]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    21
+    ssIdNumber		    5
+    name		    "y"
+    linkNode		    [18 20 22]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    22
+    ssIdNumber		    6
+    name		    "u2"
+    linkNode		    [18 21 23]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	fixpt {
+	  scalingMode		  SF_FIXPT_BINARY_POINT
+	}
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    23
+    ssIdNumber		    7
+    name		    "u3"
+    linkNode		    [18 22 0]
     scope		    INPUT_DATA
     machine		    1
     props {
@@ -4033,9 +4163,9 @@ Stateflow {
   junction {
     id			    24
     position		    [23.5747 49.5747 7]
-    chart		    19
-    linkNode		    [19 0 0]
-    subviewer		    19
+    chart		    18
+    linkNode		    [18 0 0]
+    subviewer		    18
     ssIdNumber		    3
     type		    CONNECTIVE_JUNCTION
   }
@@ -4052,10 +4182,10 @@ Stateflow {
       intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
     }
     midPoint		    [23.5747 24.9468]
-    chart		    19
-    linkNode		    [19 0 0]
+    chart		    18
+    linkNode		    [18 0 0]
     dataLimits		    [21.175 25.975 14.625 42.575]
-    subviewer		    19
+    subviewer		    18
     drawStyle		    SMART
     slide {
       sticky		      BOTH_STICK
@@ -4065,9 +4195,9 @@ Stateflow {
   }
   instance {
     id			    26
-    name		    "Estanques/Parada de emergencia/Logic"
+    name		    "Estanques/Sistema de descarga/Secuencia de Descarga"
     machine		    1
-    chart		    19
+    chart		    18
   }
   target {
     id			    27
