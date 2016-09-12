@@ -1,1 +1,1 @@
-mex -lWSock32 -Iinclude src/SPlantaNivel.cpp src/opto22snap.cpp
+mex -v -lWs2_32 -Iinclude src/SPlantaNivel.cpp src/opto22snap.cpp
