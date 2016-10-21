@@ -1,0 +1,44 @@
+% Figura
+\begin{figure}[H]
+\begin{center}
+	\includegraphics[width=0.5\textwidth]{/img/msg}
+	\caption{Mensaje para modular usando FM.}
+	\label{msg}
+\end{center}
+\end{figure}
+
+
+%subfigura
+\begin{figure}[H]
+        \centering
+        \begin{subfigure}[b]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{../img/bloque-pi-awu.png}
+                \caption{Bloque \texttt{PI+AWU}.}
+        \end{subfigure}%
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{../img/pi.png}
+                \caption{Controlador PI convencional.}
+        \end{subfigure}
+        ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc.
+          %(or a blank line to force the subfigure onto a new line)
+        \begin{subfigure}[b]{0.3\textwidth}
+                \includegraphics[width=\textwidth]{../img/pi-awu.png}
+                \caption{Controlador PI con sistema \textit{antiwinding up}}
+        \end{subfigure}
+        \caption{Bloque \texttt{PI+AWU} y sus componentes.}\label{pi-awu}
+\end{figure}
+
+\begin{equation}
+    \begin{matrix}
+      1 & 2 & 4 \\
+      128 & 0 & 8 \\
+      64 & 32 & 16
+     \end{matrix}
+\end{equation}
+
+\begin{eqnarray*}
+d_1(x,y)&=& \sum_{i=0}^{n} |x_i - y_i |\\
+d_2(x,y)&=& \sqrt{\sum_{i=0}^{n} (x_i - y_i)^2} 
+\end{eqnarray*}
